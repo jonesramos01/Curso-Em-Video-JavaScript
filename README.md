@@ -1,2 +1,2 @@
-# JavaScript
- Curso de JavaScript | CEV
+# JAVASCRIPT-CEV
+ CURSO DE JAVASCRIPT | CEV
