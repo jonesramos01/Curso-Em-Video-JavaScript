@@ -31,3 +31,6 @@ n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}); "Add o valor mo
 
 "... + ..." adição e concatenação
 `... ${nomedavariável} ...` concatenação
+
+·····························································································
+::::OPERADORES:
