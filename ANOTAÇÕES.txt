@@ -1,6 +1,6 @@
-//···················································································
-//::::COMANDOS::::
-//···················································································
+·····················································································
+::::COMANDOS BÁSICOS::::
+·····················································································
 alert("Hello World!");
 confirm("Welcome!");
 prompt("Qual o seu nome");
@@ -33,4 +33,91 @@ n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}); "Add o valor mo
 `... ${nomedavariável} ...` concatenação
 
 ·····························································································
-::::OPERADORES:
+::::OPERADORES::::
+·····························································································
+
+1.ARITMÉTICOS: 
++ SOMA 
+- SUBTRAÇÃO 
+* MULTIPLICAÇÃO
+/ DIVISÃO
+% RESTO
+** POTÊNCIA
+
+OBS: ORDEM DE PRECEDÊNCIA:
+( )
+**
+* / %
++ -
+
+2.ATRIBUIÇÃO: 
+
+SIMPLES:
+var a = 5 + 2
+
+AUTO-ATRIBUIÇÃO
+var a = 7
+a = a + 3 (a += 3)
+
+INCREMENTO:
+++a "Soma + 1"
+--a "Subtrai - 1"
+
+3.RELACIONAIS:
+> "Maior"
+< "Menor"
+>= "Maior-igual"
+<= "Menor-igual"
+== "Igual"
+=== "Igual e Identico" (testa o valor e também o tipo)
+!= "Diferente"  
+
+4.LÓGICOS: 
+
+! "Negação"
+&& "Conjunção"
+|| "Disjunção"
+
+EX:
+
+Negação:
+! TRUE → FALSE
+! FALSE → TRUE
+
+Conjunção: "Só satisfas de 2 forem verdadeiras = TRUE"
+
+"Fulano é lindo && feio?"
+
+TRUE && TRUE → TRUE
+TRUE && FALSE → FALSE
+FALSE && TRUE → FALSE
+FALSE && FALSE → FALSE
+
+Disjunção: "Basta que apenas 1 seja verdadeiro = TRUE"
+
+"Fulano é lindo || feio?"
+
+TRUE && TRUE → TRUE
+TRUE && FALSE → TRUE
+FALSE && TRUE → TRUE
+FALSE && FALSE → FALSE
+
+OBS: ORDEM DE PRECEDÊNCIA:
+() ** * / % + - "Aritméticos"
+> < >= <= "Relacionais"
+! "Negação"
+&& "Conjunção" 
+|| "Disjunção"
+
+5.TERNÁRIO:
+
+? :
+
+TESTE ? TRUE : FALSE
+
+Ex:
+var media = 7.0;
+
+media >= 7 ? "aprovado" : "reprovado"
+
+OBS: RESULTADO BOOLEANO: TRUE, FALSE (V, F)
