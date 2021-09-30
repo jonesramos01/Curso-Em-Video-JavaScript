@@ -1,0 +1,33 @@
+//···················································································
+//::::COMANDOS::::
+//···················································································
+alert("Hello World!");
+confirm("Welcome!");
+prompt("Qual o seu nome");
+
+//"ESCREVE NA TELA DO NAVEGADOR:"
+document.write(); 
+
+//"CONVERTE STRING EM NÚMERO:"
+Number.parseInt OU parseInt OU Number = Inteiro
+Number.parseFloat OU parseFloat OU Number = Real
+
+//"CONVERTE NÚMERO EM STRING:"
+String(n)  
+n.toString()
+
+//"FORMATAÇÃO DE STRING:""
+s.length "Diz quantos caracteres a string tem"
+s.toUpperCase() "Tudo para maiúsculo"
+s.toLowerCase() "Tudo para minúsculo"
+
+//"FORMATAÇÃO DE NÚMEROS:"
+n.toFixed(x); "Adiciona "x" casas decimais"
+n.toFixed(x).replace('.', ','); "Muda ponto por vírgula ou vice e versa se necessário"
+
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}); "Add o valor monetário"
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}); "Add o valor monetário"
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}); "Add o valor monetário"
+
+"... + ..." adição e concatenação
+`... ${nomedavariável} ...` concatenação
