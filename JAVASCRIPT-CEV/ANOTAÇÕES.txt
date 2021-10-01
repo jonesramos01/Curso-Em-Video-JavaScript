@@ -121,3 +121,48 @@ var media = 7.0;
 media >= 7 ? "aprovado" : "reprovado"
 
 OBS: RESULTADO BOOLEANO: TRUE, FALSE (V, F)
+
+······································································································
+::::MÓDULO C: DOM::::
+······································································································
+::::1.INTRODUÇÃO AO DOM::::
+DOCUMENT OBJECT MODEL
+
+::::ARVORE DOM (DENTRO DO NAVEGADOR)::::
+
+WINDOW:
+LOCATION, DOCUMENT, HISTORY
+
+DOCUMENT:
+HTML
+
+HTML:
+HEAD, BODY
+
+HEAD:
+META, TITLE, ...
+
+BODY:
+H1, P, DIV, ...
+
+P: 
+STRONG, ...
+
+::::NAVEGAR NA ARVORE DOM::::
+(SELECIONAR ELEMENTO)
+
+1.POR MARCA:
+getElementsByTagName()
+
+2.POR ID:
+getElementsById()
+
+3.POR NOME:
+getElementsByName()
+
+4.POR CLASSE:
+getElementsByClassName()
+
+5.POR SELETOR (ATUALMENTE O MAIS RECOMENDADO):
+querySelector()
+querySelectorAll()
