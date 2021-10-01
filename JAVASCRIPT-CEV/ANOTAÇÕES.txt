@@ -166,3 +166,5 @@ getElementsByClassName()
 5.POR SELETOR (ATUALMENTE O MAIS RECOMENDADO):
 querySelector()
 querySelectorAll()
+
+::::2.EVENTOS DOM::::
