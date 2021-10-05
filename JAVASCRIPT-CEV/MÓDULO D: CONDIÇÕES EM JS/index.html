@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÓDULO D: CONDICIONAIS</title>
+    <style>
+        body{
+            color: white;
+            background-color: rgb(37, 67, 97);
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <!--
+    <h1>MÓDULO D: CONDICIONAIS:</h1>
+    
+    <h2>1.CONDIÇÃO SIMPLES:</h2>
+    <pre>
+        if(condição){
+
+            true
+
+        }
+
+        Ex1: LIMITE DE VELOCIDADE
+
+        var vel = 102; //"Testar outros valores de velocidade"
+
+        console.log(`A velocidade do seu carro é ${vel} km/h`);
+
+            if(vel > 60){
+
+        console.log(`Você ultrapassou a velocidade permitida. MULTADO!`)
+
+        }
+        
+        console.log(`Dirija sempre usando cinto de segurança!`);
+    
+    </pre>
+
+    <h2>2.CONDIÇÃO COMPOSTA:</h2>
+    <pre>
+        if(condição){
+
+            true
+
+        } else {
+
+            false
+
+        }
+
+        Ex: NASCIDO EM...
+
+        var país = "CAN" //Testar outros valores...
+        
+        console.log(`Nascido em: ${país}`)
+        
+        if(país == "Brasil"){
+        
+            console.log("Você é: Brasileiro");
+        
+        } else {
+        
+            console.log("Você é: Estrangeiro");
+        
+        }text
+    </pre>
+    -->
+    <hr>
+    <!--EX: SISTEMA DE MULTAS:-->
+    <h1>SISTEMA DE MULTAS</h1>        
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+    
+        function calcular(){
+        var txtvel = window.document.getElementById('txtvel'); //ou querySelector("input#txtvel");
+        var res = window.document.getElementById('div#res');
+        var vel = Number(txtvel.value);
+        res.innerHTML = `Sua velocidade atual é de ${vel}`;
+        }
+    </script>
+</body>
+</html>
