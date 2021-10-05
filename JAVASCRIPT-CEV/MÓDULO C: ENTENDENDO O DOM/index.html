@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MÓDULO C: DOM</title>
     <style>
+        /*EVENTO BOTÃO/CLICK:
         body{
             color: white;
             background-color: rgb(68, 125, 199);
@@ -13,23 +14,39 @@
             font-size: 16px;
             font-family: Arial, Helvetica, sans-serif;
             }
-
+        
         div#area{
             color: white;
-<<<<<<< HEAD
-            background-color: greenyellow;
-
-            border: 1px solid red;
-=======
             background-color: green ; 
             width: 200px;
             height: 200px;
             line-height: 200px;
             text-align: center;
             border: 1px solid red;
+        }   
+        */
+
+        /*EVENTO SOMANDO VALORES:*/
+
+        body{
+            color: white;
+            background-color: rgb(68, 125, 199);
+            font-style: normal;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
             
->>>>>>> 9e89c1713879b1872824964b478d7e52403a75b0
-        }    
+        }
+
+        input{
+            font-style: normal;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#res{
+            margin-top: 10px;
+        }
+        
     </style>
 </head>
 <body>
@@ -63,12 +80,13 @@
     </pre>
     <div>Saiba mais</div>
 
-    <hr><!--·······················································································-->
-
-    <h2>2.EVENTOS DOM:</h2>    
+    <hr>
+<!--·······························································································-->
+    <h2>2.EVENTOS DOM:</h2>
+<!--·······························································································-->   
+     <h2>Ex: BOTÃO + MOUSE</h2>    
+    
     <pre>
-        Ex: BOTÃO + MOUSE
-
         Eventos:
 
         mouseenter
@@ -87,12 +105,20 @@
 
         }
     </pre>
-
-    <h1>ÁREA DE TESTES:</h1>
-
-    <!--EVENTO DE CLICK:-->
+<!--·······························································································-->
     
-    <!--Ex1: EVENTO DOM: BOTÃO+MOUSE
+    <h2>Ex: SOMANDO VALORES</h2>
+
+<!--·······························································································-->
+    <h1>ÁREA DE TESTES:</h1>
+<!--·······························································································-->
+<!--::::EVENTO DE CLICK::::-->
+<!--·······························································································-->
+
+<!--Ex: EVENTO DOM: BOTÃO+MOUSE:-->
+
+<!--Ex1:
+
     <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         INTERAÇÃO 
     </div>
@@ -116,7 +142,8 @@
     </script>
     -->
     
-    <!--Ex2: EVENTO DOM: BOTÃO+MOUSE
+<!--Ex2: 
+
     <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         INTERAÇÃO 
     </div>
@@ -144,7 +171,8 @@
     </script>
     -->
     
-    <!--Ex3: EVENTO DOM: BOTÃO+MOUSE
+<!--Ex3: 
+
     <div id="area">
         INTERAÇÃO 
     </div>
@@ -175,7 +203,24 @@
     </script>
     -->
 
+<!--EX: EVENTO SOMANDO VALORES:-->
 
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById("txtn1");
+            var tn2 = window.document.getElementById("txtn2");
+            var res = window.document.getElementById("res");
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var s = n1 + n2;
+            res.innerHTML = `A soma ente ${n1} e ${n2} é igual a <strong>${s}</strong>`;
+        }
+    </script>
 
 </body>
 </html>
