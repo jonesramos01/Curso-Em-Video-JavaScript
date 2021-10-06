@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MÓDULO D: CONDICIONAIS</title>
+    <title>MÓDULO D: CONDICIONAIS - PARTE 1</title>
     <style>
         body{
             color: white;
@@ -14,9 +14,9 @@
 </head>
 <body>
     
-    <!--
-    <h1>MÓDULO D: CONDICIONAIS:</h1>
     
+    <h1>MÓDULO D: CONDICIONAIS - PARTE 1</h1>
+    <!--
     <h2>1.CONDIÇÃO SIMPLES:</h2>
     <pre>
         if(condição){
@@ -102,7 +102,7 @@
     </script>
     -->
 
-    <!--EX PRÁTICO 2: LOCAL DE NASCIMENTO-->
+    <!--EX PRÁTICO 2: LOCAL DE NASCIMENTO (ERRO, REFAZER!)-->
 
     <h1>LOCAL DE NASCIMENTO</h1>
     País de Nascimento: <input type="text" name="txtNasc" id="txtNasc"> <input type="button" value="Verificar" onclick="verificar()">
@@ -112,15 +112,17 @@
         function verificar(){
             var txtNasc = window.document.getElementById("txtNasc");
             var res = window.document.getElementById("res");
-            var nasc = Text(txtNasc.value);
+            var nasc = "Brasil";
             res.innerHTML = `<p>Você nasceu em: <strong>${nasc}</strong></p>`;
                 if(nasc == Brasil){
                     res.innerHTML += `Você é <strong>brasileiro</strong>`;
-                } else {
+                } 
+                
+                else {
                     res.innerHTML += `Você é <strong>estrangeiro</strong>`;
                 }
-
-            res.innerHTML += `Boa viajem!`
+                   
+            res.innerHTML += `Boa viajem!`;
 
         }
     </script>
