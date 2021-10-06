@@ -25,7 +25,7 @@
 
         }
 
-        Ex1: LIMITE DE VELOCIDADE
+        Ex1: "LIMITE DE VELOCIDADE" = SISTEMA DE MULTAS
 
         var vel = 102; //"Testar outros valores de velocidade"
 
@@ -53,7 +53,7 @@
 
         }
 
-        Ex: NASCIDO EM...
+        Ex2: "NASCIDO EM..." = LOCAL DE NASCIMENTO
 
         var país = "CAN" //Testar outros valores...
         
@@ -73,7 +73,7 @@
     
     <hr>
     
-    <!--EX: SISTEMA DE MULTAS:-->
+    <!--EX PRÁTICO 1: SISTEMA DE MULTAS:
     
     <h1>SISTEMA DE MULTAS</h1>        
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h <input type="button" value="Verificar" onclick="calcular()">
@@ -86,7 +86,11 @@
             var txtvel = window.document.getElementById("txtvel");
             var res = window.document.getElementById("res");
             var vel = Number(txtvel.value);
-            res.innerHTML = `Sua velocidade atual é de: ${vel} Km/h`;
+            res.innerHTML = `<p>Sua velocidade atual é de: <strong>${vel} Km/h</strong></p>`;
+                if(vel > 60){
+                    res.innerHTML += `Você foi <strong>MULTADO</strong> por excesso de velocidade!`
+                }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`;
 
             //opção 2:
             //var txtvel = window.document.querySelector("input#txtvel");
@@ -96,5 +100,32 @@
 
         }
     </script>
+    -->
+
+    <!--EX PRÁTICO 2: LOCAL DE NASCIMENTO-->
+
+    <h1>LOCAL DE NASCIMENTO</h1>
+    País de Nascimento: <input type="text" name="txtNasc" id="txtNasc"> <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var txtNasc = window.document.getElementById("txtNasc");
+            var res = window.document.getElementById("res");
+            var nasc = Text(txtNasc.value);
+            res.innerHTML = `<p>Você nasceu em: <strong>${nasc}</strong></p>`;
+                if(nasc == Brasil){
+                    res.innerHTML += `Você é <strong>brasileiro</strong>`;
+                } else {
+                    res.innerHTML += `Você é <strong>estrangeiro</strong>`;
+                }
+
+            res.innerHTML += `Boa viajem!`function verificar(){
+
+}
+    </script>
+    
+
+
 </body>
 </html>
