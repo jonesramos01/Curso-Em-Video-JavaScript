@@ -1,0 +1,27 @@
+/*VERIFICADOR DE IDADE*/
+body{
+    background: rgba(0, 0, 255, 0.87);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+
+    text-align: center;
+}
+
+header{
+    color: white;
+}
+
+section{
+    background: white;
+
+    margin: ;
+    padding: 15px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.500);
+}
+
+footer{
+    color: white;
+}
