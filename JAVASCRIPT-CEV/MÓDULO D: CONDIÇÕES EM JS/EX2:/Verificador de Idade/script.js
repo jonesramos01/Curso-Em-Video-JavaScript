@@ -18,6 +18,11 @@ function verificar(){
         /*window.alert("Tudo ok!"); //Teste */
         var fsex = document.getElementsByName("radsex");
         var idade = ano - Number(fano.value);
-        res.innerHTML = `Idade calculada: ${idade}`
+        /*res.innerHTML = `Idade calculada: ${idade}` //Teste */ 
+        var genero = ""
+
+        if(fsex[0].checked){
+            genero = ""
+        }
     }
 }
