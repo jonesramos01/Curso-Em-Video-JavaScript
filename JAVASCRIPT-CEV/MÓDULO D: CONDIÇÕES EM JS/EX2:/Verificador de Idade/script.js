@@ -30,12 +30,16 @@ function verificar(){
             
             if(idade >= 0 && idade <10){
                 //criança
+                img.setAttribute("src", "assets/crianca-h.jpg");
             } else if(idade >= 10 && idade < 21){
                 //jovem
+                img.setAttribute("src", "assets/jovem-h.jpg");
             } else if(idade >= 21 && idade < 50){
                 //Adulto
+                img.setAttribute("src", "assets/adulto-h.jpg");
             } else if(idade >= 50){
                 //idoso
+                img.setAttribute("src", "assets/idoso-h.jpg");
             }
 
         } else if(fsex[1].checked){
@@ -43,15 +47,19 @@ function verificar(){
 
             if(idade >= 0 && idade <10){
                 //criança
+                img.setAttribute("src", "assets/crianca-m.jpg");
             } else if(idade >= 10 && idade < 21){
                 //jovem
+                img.setAttribute("src", "assets/jovem-m.jpg");
             } else if(idade >= 21 && idade < 50){
                 //Adulto
+                img.setAttribute("src", "assets/adulto-m.jpg");
             } else if(idade >= 50){
                 //idoso
+                img.setAttribute("src", "assets/idoso-m.jpg");
             }
         }  
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
-        
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`; //Para imprimir a mensagem na tela.
+        res.appendChild(img); //Para ativar a visualização das imagens.
     }
 }
