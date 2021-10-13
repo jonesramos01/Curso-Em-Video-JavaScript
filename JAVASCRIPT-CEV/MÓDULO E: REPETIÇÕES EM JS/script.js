@@ -88,14 +88,14 @@ do{
 } while(condição)   
 */
 
-/**/
+/*
 //
 var contador = 1
 do {
     console.log(`Passo ${contador}`);
     contador++;
 } while(contador <= 5)
-
+*/
 
 //····································································································
 //3.REPETIÇÕES COM CONTROLE =
