@@ -100,3 +100,48 @@ do {
 //····································································································
 //3.REPETIÇÕES COM CONTROLE =
 //····································································································
+
+/*
+//
+for(inicio; teste; incremento){
+    //bloco
+}
+*/
+
+/*
+//EX USANDO WHILE:
+var c = 1; //inicialização
+while(c <= 5){ //teste lógico
+    console.log(`Passo ${c}`); 
+    c++; //incremento
+}
+*/
+
+/*
+//EX USANDO DO WHILE:
+var c = 1; //inicialização
+do {
+    console.log(`Passo ${c}`); 
+    c++; //incremento
+} while(c <= 5); //teste lógico
+*/
+
+/*
+//EX USANDO FOR:
+for(var c = 1; c <= 5; c++){ //inicialização, teste lógico, incremento
+    console.log(`Passo ${c}`);
+}
+*/
+
+//····································································································
+//MODO DE DEPURAÇÃO (DEBUG):
+//····································································································
+/**/
+//
+console.log("Vai começar...");
+
+for(var c = 1; c <= 5; c++){
+    console.log(c)
+}
+
+console.log("Fim!")
