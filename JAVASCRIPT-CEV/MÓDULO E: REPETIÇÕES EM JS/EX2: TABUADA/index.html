@@ -9,6 +9,7 @@
 </head>
 <body>
     <script src="script.js"></script>
+
     <h1 id="moduloE">MÓDULO E: REPETIÇÕES EM JS:</h1>
     <hr>
     <header>
@@ -16,12 +17,47 @@
     </header>
 
     <section>
-        <div>
-            Conteúdo 1
-        </div>
+        <div id="dados">
+            <!--Conteúdo 1-->
+            <p>
+                Número: <!--Ou: <label for="num">Número:</label> -->
+                <input type="number" name="num" id="txtn">
+                <input type="button" value="Gerar tabuada" onclick="tabuada()">
+            </p>
 
-        <div>
-            Conteúdo 2
+            <p>
+                <select name="tab" id="txtt" size="10">
+                <!--
+                Forma estática:
+                    <option value="v1">valor1</option>
+                    <option value="v2">valor2</option>
+                    <option value="v3">valor3</option>
+                    <option value="v4">valor4</option>
+                    <option value="v5">valor5</option>
+                    <option value="v6">valor6</option>
+                    <option value="v7">valor7</option>
+                    <option value="v8">valor8</option>
+                    <option value="v9">valor9</option>
+                    <option value="v10">valor10</option>
+                
+
+                Forma dinâmica:
+                    "Não precisa necessariamente criar vários option com vários valores, faz-se tudo pelo JS".
+                -->
+
+                <option value="">Digite um número a cima</option>
+
+                </select>
+                
+
+            </p>
+
+            
+        </div>
+        <hr>
+        <div id="res">
+            <!--Conteúdo 2-->
+            <p>Por favor, entre com um número para tabuada ser gerada!</p>
         </div>
     </section> 
 
