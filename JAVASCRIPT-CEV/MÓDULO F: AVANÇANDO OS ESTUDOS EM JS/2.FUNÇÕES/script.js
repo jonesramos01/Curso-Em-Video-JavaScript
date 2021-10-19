@@ -39,5 +39,5 @@ function soma(n1=0, n2=0){ //Parâmetros já pré definidos como zero para se ca
 }
 console.log(soma(7))
 
-OBS: Continuar o estudo sobre funções. Pois tem muitas outras sintaxes e formas de usar.
+OBS: Continuar o estudo sobre funções. Pois as mesmas, tem muitas outras sintaxes e formas de usar.
 */
