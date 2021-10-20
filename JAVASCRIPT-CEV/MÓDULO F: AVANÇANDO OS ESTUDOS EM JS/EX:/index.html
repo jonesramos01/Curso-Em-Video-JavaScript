@@ -18,17 +18,18 @@
     
     <section>
         <div id="dados">
-            <label for="">Número (entre 1 e 100):</label>
-            <input type="number" name="textnum" id="num">
-            <input type="button" value="Adicionar" onclick="">
-
+            Número (entre 1 e 100): 
+            <!--Ou: <label for="fnum">Número (entre 1 e 100):</label>-->
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()"> <br><br>
+            <select name="flista" id="flista" size="6"></select> <br>
+            <input type="button" value="Finalizar" onclick="finalizar()">
         </div>
         
         <hr>
         
         <div id="res">
-            <input type="number" name="txtsel" id="sel"> <br>
-            <input type="button" value="Finalizar" onclick="">
+            Resposta aqui...
         </div>
     </section>
 
