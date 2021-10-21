@@ -6,7 +6,7 @@
 
 //1º) Arrays simulando um banco de dados:
 
-var nomes = ["Jones", "Derek", "Thais"];
+var nomes = ["Pedro", "André", "Thiago"];
 var notasA = [7.0, 7.5, 5.0];
 var notasB = [7.0, 7.5, 5.0];
 
