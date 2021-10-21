@@ -6,19 +6,38 @@
 let num = document.getElementById("fnum")
 let lista = document.getElementById("flista")
 let res = document.getElementById("res")
-let valores = [] //Array declarado para análise de dados
+let valores = [] //Array declarado para análise de dados = Lista
 
+//2º Adição dos números:
 
+function isNumero(n){ //Recebe um número
+    if(Number(n) >= 1 && Number(n) <= 100){
+        return true
+    } else {
+        return false
+    }
+}
 
-//1
+function inLista(n, l){ //Recebe um número e a lista 
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    } else {
+        return false
+    }
+}
+
+//1º
+
 function adicionar(){
-    if(num >=1 && num <= 100){
-
+    if(isNumero(num.value) && !inLista(num.value, valores)){
+        window.alert("Tudo ok!")
     } else {
         window.alert("Valor inválido ou já encontrado na lista!")
     }
 }
 
+/*
 function finalizar(){
 
 }
+*/
