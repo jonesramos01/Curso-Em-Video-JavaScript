@@ -40,5 +40,13 @@ getMinutes()	Returns the minutes (from 0-59)
 getSeconds()	Returns the seconds (from 0-59)
 getMilliseconds()	Returns the milliseconds (from 0-999)
 
+setFullYear()	Sets the year of a date object
+setMonth()	Sets the month of a date object
+setDate()	Sets the day of the month of a date object
+setHours()	Sets the hour of a date object
+setSeconds()	Sets the seconds of a date object
+setMinutes()	Set the minutes of a date object
+setMilliseconds()	Sets the milliseconds of a date object
+
 Obs: Lista completa em index.html
 */
