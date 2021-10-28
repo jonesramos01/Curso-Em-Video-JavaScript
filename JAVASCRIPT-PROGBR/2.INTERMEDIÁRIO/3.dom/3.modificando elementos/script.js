@@ -81,10 +81,14 @@ console.log(paragrafo);
 //ÁREA DE TESTES:
 
 //Altera o conteúdo do parágrafo de id:"p1":
-let p = document.getElementById("p1")
-console.log(p)
-p.innerHTML = "Novo conteúdo 1" 
+//let p = document.getElementById("p1")
+//console.log(p)
+
+//p.innerHTML = "Novo conteúdo 1" 
 //Ou:
-p.innerText = "Novo conteúdo 2"
+//p.innerText = "Novo conteúdo 2"
 //Ou: 
-p.textContent = "Novo conteúdo 3"
+//p.textContent = "Novo conteúdo 3"
+
+//
+//p.textContent = "<h2>Tem um h2 dentro de p</h2>"
