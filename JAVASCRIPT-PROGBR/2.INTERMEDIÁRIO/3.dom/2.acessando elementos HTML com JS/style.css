@@ -1,6 +1,9 @@
 /*ACESSANDO ELEMENTOS HTML COM JS:*/
 body{
-    background-color: rgb(0, 125, 255, 0.800);
+    background-color: rgb(0, 125, 255, 0.900);
 }
 
 /*ÁREA PARA TESTES DOM:*/
+.paragrafo{
+    color: blue;
+}
