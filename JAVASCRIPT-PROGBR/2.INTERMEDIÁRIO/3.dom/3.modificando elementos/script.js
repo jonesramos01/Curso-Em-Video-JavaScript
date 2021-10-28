@@ -1,6 +1,8 @@
+//····································································································
 /*ACESSANDO ELEMENTOS HTML COM JS:*/
+//····································································································
 /*
-//1) Árvore DOM:
+//1) ÁRVORE DOM:
 
 document
 
@@ -9,8 +11,7 @@ document.head.title
 
 document.body
 
-
-//2) Método para acessar qualquer elemento:
+//2) MÉTODO PARA ACESSAR QUALQUER ELEMENTO:
 
 //ACESSAR ELEMENTO PELO ID:
 document.getElementById()
@@ -61,3 +62,29 @@ console.log(paragrafo);
 
 //OBS:
 //console.clear() + Atualizar o navegador //Para limpar o console e apagar a memória
+
+/*··································································································*/
+/*MODIFICANDO ELEMENTOS:*/
+/*··································································································*/
+
+//MANEIRAS DE MODIFICAR ELEMENTOS:
+
+//1) innerHTML:
+//xpto.innerHTML
+
+//2) innerText:
+//xpto.innerText
+
+//3) textContent:
+//xpto.textContent
+
+//ÁREA DE TESTES:
+
+//Altera o conteúdo do parágrafo de id:"p1":
+let p = document.getElementById("p1")
+console.log(p)
+p.innerHTML = "Novo conteúdo 1" 
+//Ou:
+p.innerText = "Novo conteúdo 2"
+//Ou: 
+p.textContent = "Novo conteúdo 3"
