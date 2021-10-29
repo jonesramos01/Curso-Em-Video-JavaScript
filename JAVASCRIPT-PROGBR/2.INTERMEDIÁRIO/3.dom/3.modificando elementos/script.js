@@ -69,13 +69,13 @@ console.log(paragrafo);
 
 //MANEIRAS DE MODIFICAR ELEMENTOS:
 
-//1) innerHTML:
+//1) innerHTML: "Modificam conteúdo, Faz alterações HTML, Mostra alteração no navegador"
 //xpto.innerHTML
 
-//2) innerText:
+//2) innerText: "Modificam conteúdo, Não faz alterações HTML, Mostra no console o conteúdo que aparece no navegador"
 //xpto.innerText
 
-//3) textContent:
+//3) textContent: "Modificam conteúdo, Não faz alterações HTML, Mostra no console o conteúdo que aparece no HTML"
 //xpto.textContent
 
 //ÁREA DE TESTES:
@@ -92,3 +92,16 @@ console.log(paragrafo);
 
 //
 //p.textContent = "<h2>Tem um h2 dentro de p</h2>"
+
+/*··································································································*/
+/*MODIFICANDO ATRIBUTOS:*/
+/*··································································································*/
+
+//MODIFICANDO CLASSE:
+
+//Ex: 
+
+//p.className = ""
+
+//p.style = "color: blue"
+
