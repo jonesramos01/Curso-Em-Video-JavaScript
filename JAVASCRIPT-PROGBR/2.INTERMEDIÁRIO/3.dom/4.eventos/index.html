@@ -10,25 +10,28 @@
 <body>
     <h1>EVENTOS DOM:</h1>
     <hr>
+    <!--···························································································-->
     <h1><u>onclick:</u></h1>
+    <!--···························································································-->
 
     <!--Imprimindo evento no console a partir do evento onclick:-->
     <h1 onclick="console.log('O h1 foi clicado!')">Clique aqui</h1> 
 
     <!--Função a partir do evento onclick:-->
-    <h2 onclick="h2click()">Clique aqui na função de "click"</h2> <!--Ex: click(), calcular(), assinar(), enviar(), ... -->
+    <h2 onclick="clickH2()">Clique aqui na função de "click"</h2> <!--Ex: click(), calcular(), assinar(), enviar(), ... -->
 
     <h3 onclick="console.log(this)">Clique aqui para imprimir "this"</h3>
 
     <h3 onclick="console.log(this.style.color = 'red')">Clique aqui para mudar a cor</h3>
 
     <hr>
-
+    <!--···························································································-->
     <h1><u>onchange:</u></h1>
+    <!--···························································································-->
 
-    <h1>Clique aqui</h1>
+    <h1 id="clickH1">Clique aqui</h1>
     
-    <input type="text" onchange="">
+    <input type="text" onchange="changeH1()">
 
     <hr>
 
