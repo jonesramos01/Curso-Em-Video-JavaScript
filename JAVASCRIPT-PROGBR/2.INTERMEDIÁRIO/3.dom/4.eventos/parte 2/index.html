@@ -9,7 +9,7 @@
 </head>
 <body onload="console.log('Página completamente carregada!')">
     <h1>EVENTOS DOM: PARTE 2</h1>
-   
+    <hr>    
     <!--PARTE 2:-->
     <!--ONLOAD: "É EXECUTADO DEPOIS QUE TODA PÁGINA FOR CARREGADA"-->
 <!--
@@ -21,12 +21,13 @@
     
 -->
 
-    <!--EVENTOS DE MOUSE:-->
+    <!--EVENTOS DE MOUSE(BOTÃO):-->
     
-    <!--ONMOUSEOVER:-->
+    <!--ONMOUSEOVER: "AO ENTRAR COM O MOUSE NA ÁREA DO BOTÃO"-->
+    <!--ONMOUSEOUT: "AO SAIR COM O MOUSE NA ÁREA DO BOTÃO"-->
     <img src="assets/control-ps5.jpg" alt="control-ps5">
     <br>
-    <div onmouseover="">
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">
         Click
     </div>
     
