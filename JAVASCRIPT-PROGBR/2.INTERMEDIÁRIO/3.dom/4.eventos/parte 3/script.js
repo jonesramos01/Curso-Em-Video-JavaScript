@@ -20,12 +20,12 @@
 
 /*OBS: ONLOAD:*/
 
-/*
+/**/
 function loaded(){
     let t = document.getElementById("titulo")
     t.innerHTML = "Novo Título"
 }
-*/
+
 
 
 
