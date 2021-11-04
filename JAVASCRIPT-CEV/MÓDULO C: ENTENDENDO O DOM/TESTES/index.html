@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body{
+        background-color: rgba(0, 125, 255, 0.900);
+}
+        div#area{
+            background-color: green;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+
+            text-align: center;
+            line-height: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>EVENTOS DOM:</h1>
+    <hr><br>
+
+    <!--1) EVENTOS DE MOUSE: onclick, onmouseenter, -->
+    
+    <!--1ª FORMA:
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmouseover="over()">      
+        "Clique"
+    </div>
+    -->
+
+    <!--2ª FORMA:-->
+    <div id="area">        
+        "Clique"
+    </div>
+
+    <script>
+    /*1) EVENTOS DE MOUSE: onclick, onmouseenter, onmouseout, onmouseout, ...*/
+    
+    /*
+    //onclick:
+    function clicar(){
+        var a = window.document.getElementById("area")
+        a.innerText = "Clicou!" //Ou: innerHTML (testar)
+        a.style.backgroundColor = "red"
+    }
+
+    //onmouseenter:
+    function entrar(){
+        var e = window.document.getElementById("area")
+        e.innerText = "Entrou!"
+
+    }
+
+    //onmouseout:
+    function sair(){
+        var s = window.document.getElementById("area")
+        s.innerText = "Saiu!"
+        s.style.backgroundColor = "green"
+    }
+    */
+
+    var a = window.document.getElementById("area")
+    a.addEventListener("click", clicar)
+    a.addEventListener("mouseenter", entrar)
+    a.addEventListener("mouseout", sair)
+
+    //onclick:
+    function clicar(){        
+        a.innerText = "Clicou!" //Ou: innerHTML (testar)
+        a.style.backgroundColor = "red"
+    }
+
+    //onmouseenter:
+    function entrar(){        
+        a.innerText = "Entrou!"
+
+    }
+
+    //onmouseout:
+    function sair(){
+        a.innerText = "Saiu!"
+        a.style.backgroundColor = "green"
+    }
+    
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
