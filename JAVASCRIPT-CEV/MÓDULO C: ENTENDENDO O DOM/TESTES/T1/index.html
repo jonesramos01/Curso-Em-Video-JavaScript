@@ -31,20 +31,26 @@
     <h1>EVENTOS DOM:</h1>
     <hr><br>
 
-    <!--1) EVENTOS DE MOUSE: onclick, onmouseenter, -->
+    <!--1) EVENTOS DE MOUSE: 
+        onclick → click 
+        onmouseenter → mouseenter
+        onmouseout → mouseout
+        onmouseover → mouseover
+        -->
     
-    <!--1ª FORMA:
+    <!--1ª FORMA:*
     <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmouseover="over()">      
         "Clique"
     </div>
     -->
 
-    <!--2ª FORMA:-->
+    <!--2ª FORMA:**-->
     <div id="area">        
         "Clique"
     </div>
 
     <script>
+    //1ª FORMA:*        
     /*1) EVENTOS DE MOUSE: onclick, onmouseenter, onmouseout, onmouseout, ...*/
     
     /*
@@ -70,6 +76,7 @@
     }
     */
 
+    //2ª FORMA:**
     var a = window.document.getElementById("area")
     a.addEventListener("click", clicar)
     a.addEventListener("mouseenter", entrar)
